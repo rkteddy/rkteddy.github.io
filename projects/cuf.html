@@ -167,10 +167,10 @@
 
       <figure class="image">
         <img src="../assets/projects/cuf/illustration.png" style="width: 50%" />
-        <figcaption><b>.</b></figcaption>
+        <figcaption><b>Figure 1. Three images of similar bird species from CUB-200-2011 dataset are selected. The first row presents the original images and the second row presents the activation maps. The activation maps are obtained from forward propagating the image of Red Winged Blackbird to the CE trained CNN and extracting the penultimate layer feature maps. Then the channel that has the largest mean activation value is selected. An observation is that the same channel also has high activation value when we input the other two categories of images (Brewer Blackbird and Rusty Blackbird)</b></figcaption>
       </figure>
 
-      <p>The intuition is illustrated above. We select three images of three different categories from Caltech CUB-200. Let's look at the Red Winged Blackbird (Class A), whose unique feature is the red & white marking. Unique feature means that such feature doesn't exists in the other two categories: Blewer Blackbird and Rusty Blackbird (Class B and C). Hence, we should expect such a feature be considered as one of the most important basis for classification. We select the channel (single dimension in the representation vector, which is obtained by pooling the feature map in the penultimate layer) with the highest activation value w.r.t Red Winged Blackbird, and upscale then map the corresponding feature map to the input image. We can see that the attention does focus on the red&white marking. This is fine. However, when we change the input images into bird of the other two categories, we find the same channel also activated. This is not as we expected. Because if the channel is responsible to detect the red&white marking, it should not be activated when the input image has not such pattern. That means the channel contains not only the information about the red & white marking. Therefore, our work is to squeeze out those irrelevant information, and specialize the channels such that they are all responsible to detect one of unique patterns about the target class. Such specialized channels will remain silence when the target class is not presence.</p>
+      <p>The intuition is illustrated above. We select three images of three different categories from Caltech CUB-200-2011. Let's look at the Red Winged Blackbird (Class A), whose unique feature is the red & white marking. Unique feature means that such feature doesn't exists in the other two categories: Blewer Blackbird and Rusty Blackbird (Class B and C). Hence, we should expect such a feature be considered as one of the most important basis for classification. We select the channel (single dimension in the representation vector, which is obtained by pooling the feature map in the penultimate layer) with the highest activation value w.r.t Red Winged Blackbird, and upscale then map the corresponding feature map to the input image. We can see that the attention does focus on the red&white marking. This is fine. However, when we change the input images into bird of the other two categories, we find the same channel also activated. This is not as we expected. Because if the channel is responsible to detect the red&white marking, it should not be activated when the input image has not such pattern. That means the channel contains not only the information about the red & white marking. Therefore, our work is to squeeze out those irrelevant information, and specialize the channels such that they are all responsible to detect one of unique patterns about the target class. Such specialized channels will remain silence when the target class is not presence.</p>
 
       <h5 id="formulation"><b>Formulation</b></h5>
 
@@ -186,7 +186,7 @@
 
       <figure class="image">
         <img src="../assets/projects/cuf/framework.png" style="width: 100%" />
-        <figcaption><b>.</b></figcaption>
+        <figcaption><b>Figure 2. (a) During the training phase (before convergence), the model keep promoting the smallest probability in the non-target model output by assign $1-p_{t}$ to the index of the minimum value in $q_{C\setminus t}$, i.e.., $q_{3}$ in (a). (b) After iterations of training, the model output distribution will finally be uniformly distributed over non-target classes. When reaching a convergence, a Nash equilibrium exists between the optimal solution of the model and the adversary.</b></figcaption>
       </figure>
 
       <p>Specifically, we define a zero-sum strategic game played between the model and a designed adversary with loss of the model defined as the cross entropy loss $D_{CE}(p||q)$. We let $p$ be the ground truth label vector, normally one-hot encoding, while in our work we specifically design it for the objective. Here, $p$ is the strategy of the adversary and q is the strategy of the model. We assume that the model is a classifier with confidence $q_t$ on the target class. The model aims to assign the rest of the probability $1 − q_t$ to non-target classes to minimize the loss. The adversary is the controller of the ground truth with fixed $p_t$ for the target class, and it aims to maximize the loss via adjusting the distribution on non-target class of $p$. This is a dynamic game that the two players play in order, in which the model goes first, and the adversary can adjust the strategy according to the previous action of the model.</p>
@@ -199,11 +199,17 @@
       \end{align} </p>
       <h5 id="visualization"><b>Visualization</b></h5>
 
-      <p>We evaluate the proposed model in the abovementioned scenario on CUB-200. This time, we select the two channels with top activation values on class A. The two channels in a standard cross entropy (CE) trained model fails to activate uniquely according to the red & white marking. In MM trained model, the two top channels are only activated for the red & white marking, and remain silence (activation values are low) when the input image doesn't contain that target pattern (B and C). So far we have reached our goal and obtained a class unique feature extractor.</p>
+      <p>We evaluate the proposed model in the abovementioned scenario on CUB-200-2011 in figure 3. This time, we select the two channels with top activation values on class A. The two channels in a standard cross entropy (CE) trained model fails to activate uniquely according to the red & white marking. In MM trained model, the two top channels are only activated for the red & white marking, and remain silence (activation values are low) when the input image doesn't contain that target pattern (B and C). So far we have reached our goal and obtained a class unique feature extractor.</p>
 
       <figure class="image">
-        <img src="../assets/projects/cuf/performance_0.png" style="width: 75%" />
-        <figcaption><b></b></figcaption>
+        <img src="../assets/projects/cuf/performance_0.png" style="width: 60%" />
+        <figcaption><b>Figure 3. Visualization on CUB-200-2011.</b></figcaption>
+      </figure>
+
+      We demonstrate a visualization on CIFAR-10 dataset in figure 4 to give a higher level sense of class unique feature. The above row is the original images and their corresponding categories. The below shows the activations on the penultimate layer’s 128 feature maps on the standard CE trained and MM trained ResNet-18, where each map has 8 x 8 grids, each collection contains 8 x 16 maps. Clearly, MM trained CNN generates sparse class unique feature maps: the three different classes owns three different subsets of feature maps that will only be activated on the corresponding classes, and the three different airplanes activate almost the same subset of feature maps.
+      <figure class="image">
+        <img src="../assets/projects/cuf/performance_1.png" style="width: 75%" />
+        <figcaption><b>Figure 4. Visualization on CIFAR-10.</b></figcaption>
       </figure>
 
 
