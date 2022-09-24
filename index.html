@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -57,26 +58,26 @@
 
   <!-- Music player -->
   <link rel="stylesheet" href="libs/custom/audioplayer.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-          crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
   <script src="libs/custom/audioplayer.js"></script>
   <!-- Google Analytics -->
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YM94T4RDX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-7YM94T4RDX');
   </script>
 
-  
+
 
 </head>
+
 <body>
 
   <!-- Primary Page Layout
@@ -90,24 +91,25 @@
           <a href="/"><img title="Me" class="u-max-full-width" src='assets/profile-pics/me.jpg'></a>
         </div>
         <div class="nine columns main-description">
-            <h1>Runkai Zheng</h1>
-            <p>(he/him/his)</p>
-            <p>Master student, The Chinese University of Hong Kong, Shenzhen</p>
-            <p>Building 2, No. 5 Dan Ling Street, Haidian District, Beijing</p>
-            <p>rkteddy [AT] outlook.com</p>
-            <p>
-              <span onclick="window.open('https://github.com/rkteddy')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </span>
+          <h1>Runkai Zheng</h1>
+          <p>(he/him/his)</p>
+          <p>Master student, The Chinese University of Hong Kong, Shenzhen</p>
+          <p>Building 2, No. 5 Dan Ling Street, Haidian District, Beijing</p>
+          <p>rkteddy [AT] outlook.com</p>
+          <p>
+            <span onclick="window.open('https://github.com/rkteddy')" style="cursor: pointer">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </span>
 
-              <span onclick="window.open('https://scholar.google.com/citations?user=52haRQ0AAAAJ&hl=en')" style="cursor: pointer">
-                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-              </span>
+            <span onclick="window.open('https://scholar.google.com/citations?user=52haRQ0AAAAJ&hl=en')"
+              style="cursor: pointer">
+              <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+            </span>
 
-              <span onclick="window.open('https://orcid.org/0000−0003−3120−5466')" style="cursor: pointer">
-                <i class="ai ai-orcid ai-lg" aria-hidden="true"></i>
-              </span>
-            </p>
+            <span onclick="window.open('https://orcid.org/0000−0003−3120−5466')" style="cursor: pointer">
+              <i class="ai ai-orcid ai-lg" aria-hidden="true"></i>
+            </span>
+          </p>
         </div>
       </div>
     </section>
@@ -127,390 +129,416 @@
     </nav>
 
     <script>
-function unhide(divID) {
-  console.log(divID)
-  var item = document.getElementById(divID);
-  console.log('hi')
-  if (item){
-    item.className=(item.className=='hidden')?'unhidden':'hidden';
-  }
-}
-</script>
+      function unhide(divID) {
+        console.log(divID)
+        var item = document.getElementById(divID);
+        console.log('hi')
+        if (item) {
+          item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
+        }
+      }
+    </script>
 
-<!-- ========== ABOUT ========== -->
-<div class="docs-section">
-  <span class="anchor" id="about"></span>
-  <h4>About</h4>
+    <!-- ========== ABOUT ========== -->
+    <div class="docs-section">
+      <span class="anchor" id="about"></span>
+      <h4>About</h4>
 
-  <p>
-  I'm a master student at <a href='https://www.cuhk.edu.cn/en' target="_blank" rel="noopener noreferrer">The Chinese University of Hong Kong, Shenzhen</a>, advised by <a href="https://scholar.google.com/citations?user=q7FfnjgAAAAJ&hl=en">Chris H.Q. Ding</a>. Since July 2022, I've been a research intern at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/' target="_blank" rel="noopener noreferrer">Microsoft Research Asia</a>, mentored by <a href="https://jd92.wang/">Jindong Wang</a>.
-  </p>
-  
-  <p>
-  My previous research includes <b>sparse coding</b> (especially compressed sensing in image application), <b>computer vision</b>, <b>semi/self-supervised learning</b> and <b>adversarial attack/defense</b>. My approaches generally inspect the behaviors/properties of neural networks, and leverage theoretic tools to enhance their performance or align their decisions with human perceptions.
-  </p>
-  
-  <p>
-  My vision is to build machine learning system (especially computer vision system) that are both <b>trustworthy</b> and <b>broadly applicable</b>. Hence, I pay extensive attention to the progress of <b>robustness</b>, <b>interpretability</b>, <b>edge/distributed AI</b> and <b>learning from imperfect data</b>.
-  </p>
-</div>
+      <p>
+        I'm a master student at <a href='https://www.cuhk.edu.cn/en' target="_blank" rel="noopener noreferrer">The
+          Chinese University of Hong Kong, Shenzhen</a>, advised by <a
+          href="https://scholar.google.com/citations?user=q7FfnjgAAAAJ&hl=en">Chris H.Q. Ding</a>. Since July 2022, I've
+        been a research intern at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/'
+          target="_blank" rel="noopener noreferrer">Microsoft Research Asia</a>, mentored by <a
+          href="https://jd92.wang/">Jindong Wang</a>.
+      </p>
 
-<!-- ========== NEWS ========== -->
-<!-- Had to add empty anchor to solve the problem of fixed header
+      <p>
+        My previous research includes <b>sparse coding</b> (especially compressed sensing in image application),
+        <b>computer vision</b>, <b>semi/self-supervised learning</b> and <b>adversarial attack/defense</b>. 
+      </p>
+
+      <p>
+        My vision is to build machine learning system (especially computer vision system) that are both
+        <b>trustworthy</b> and <b>broadly applicable</b>. Hence, I pay extensive attention to the progress of
+        <b>robustness</b>, <b>interpretability</b>, <b>edge/distributed AI</b> and <b>learning from imperfect data</b>.
+      </p>
+    </div>
+
+    <!-- ========== NEWS ========== -->
+    <!-- Had to add empty anchor to solve the problem of fixed header
      hiding part of paper
 -->
-<span class="anchor" id="news"></span>
-<div class="docs-section">
-  <h4>News</h4>
-  <!-- <p> Scroll for older news </p> -->
-  <UL style="list-style-type: none; padding: 2px; overflow-y: scroll; height:250px;">
-    
-    <li> [09/15/2022]
-      Paper: <a href="">Identify and Remove Backdoor Neurons through Clean-Poisoned Mixture Distribution</a> accepted to NeurIPS 2022.
-    </li>
+    <span class="anchor" id="news"></span>
+    <div class="docs-section">
+      <h4>News</h4>
+      <!-- <p> Scroll for older news </p> -->
+      <UL style="list-style-type: none; padding: 2px; overflow-y: scroll; height:250px;">
 
-    <li> [08/08/2022]
-              Preprint of paper: <a href="https://arxiv.org/abs/2208.08742">Bayesian Optimization Augmented with Actively Elicited Expert Knowledge</a> avaliable at arXiv.
-    </li>
-    
+        <li> [09/15/2022]
+          Paper: <a href="">Identify and Remove Backdoor Neurons through Clean-Poisoned Mixture Distribution</a>
+          accepted to NeurIPS 2022.
+        </li>
 
-    <li> [07/19/2022]
-              I'm joining <b>Microsoft Research Asia - Social Computing Group</b> as an research intern to study the robustness of large vision pretrained models.
-    </li>
+        <li> [08/08/2022]
+          Preprint of paper: <a href="https://arxiv.org/abs/2208.08742">Bayesian Optimization Augmented with Actively
+            Elicited Expert Knowledge</a> avaliable at arXiv.
+        </li>
 
-    <li> [07/04/2022]
-              Paper: <a href="https://arxiv.org/abs/2208.03111">Data-free Backdoor Removal based on Channel Lipschitzness</a> accepted to ECCV 2022.
-    </li>
-  </UL>
-</div>
 
-<!-- ========== PROJECTS ========== -->
-<span class="anchor" id="research"></span>
-<div class="docs-section">
-  <h4>Research</h4>
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      <div class="row">
+        <li> [07/19/2022]
+          I'm joining <b>Microsoft Research Asia - Social Computing Group</b> as an research intern to study the
+          robustness of large vision pretrained models.
+        </li>
 
-        <div class="six columns">
-          <div class="project-container">
-            <div class="project-image-container">
-              <a href="https://arxiv.org/abs/2011.10951">
-                <img src="assets/projects/cuf/game-framework.png" class="u-max-full-width" />
-              </a>
-            </div>
-            <div class="project-caption">
-                <b>Categorial Informational Bottleneck</b> <br/>
-                  A Game-theoretic solver-based regularization on vision classifier.
-            </div>
-          </div>
-        </div>
-
-        <div class="six columns">
-          <div class="project-container">
-            <div class="project-image-container">
-              <a href="https://arxiv.org/abs/2208.03111">
-                <img src="assets/projects/clp/channel-lips.png" class="u-max-full-width" />
-              </a>
-            </div>
-            <div class="project-caption">
-                <b>Defensive Techniques Against Backdoor Attacks</b> <br/>
-                  Inspecting attacked neural networks from the perspective of activaiton statistics and weight matrices' properties.
-            </div>
-          </div>
-        </div>
-
-    </div>
-  </div>
-
-</div>
-
-<!-- ========== PUBLICATIONS ========== -->
-<span class="anchor" id="publications"></span>
-
-<div class="docs-section">
-   <h4>Publications</h4>
-
-   <div class="tab-content">
-      
-    <div class="tab-pane active" id="papers-selected">
-          
-      <span class="anchor" id="HHOT"></span>
-            
-        <div class="paper">
-          <p class="title"><b>Identify and Remove Backdoor Neurons through Clean-Poisoned Mixture Distribution</b></p>
-          <p><b>Runkai Zheng</b>, Rongjun Tang, Jianze Li, Li Liu</p>
-          <p><i>Neural Information Processing Systems (NeurIPS). 2022.</i></p>
-          <div class="paper-buttons">
-            <a class="button" href="" target="_blank">arxiv</a>
-            <a class="button" href="" target="_blank">code</a>         
-          </div>
-
-        </div>
-
+        <li> [07/04/2022]
+          Paper: <a href="https://arxiv.org/abs/2208.03111">Data-free Backdoor Removal based on Channel
+            Lipschitzness</a> accepted to ECCV 2022.
+        </li>
+      </UL>
     </div>
 
-    <div class="tab-content">
-       
-     <div class="tab-pane active" id="papers-selected">
-           
-       <span class="anchor" id="HHOT"></span>
-             
-         <div class="paper">
-          <p class="title"><b>Data-free Backdoor Removal based on Channel Lipschitzness</b></p>
-          <p><b>Runkai Zheng</b>, Rongjun Tang, Jianze Li, Li Liu</p>
-          <p><i>European Conference on Computer Vision (ECCV). 2022.</i></p>
-          <div class="paper-buttons">
-            <a class="button" href="https://arxiv.org/abs/2208.03111" target="_blank">arxiv</a>
-            <a class="button" href="" target="_blank">code</a>         
-          </div>
- 
-         </div>
- 
-     </div>
-
-     <div class="tab-content">
-        
-      <div class="tab-pane active" id="papers-selected">
-            
-        <span class="anchor" id="HHOT"></span>
-              
-          <div class="paper">
-            <p class="title"><b>Bayesian Optimization Augmented with Actively Elicited Expert Knowledge</b></p>
-            <p>Daolang Huang, Louis Filstroff, Petrus Mikkola, <b>Runkai Zheng</b>, Samuel Kaski</p>
-            <p><i>Preprint. 2022</i></p>
-            <div class="paper-buttons">
-              <a class="button" href="https://arxiv.org/abs/2208.08742" target="_blank">arxiv</a>
-              <a class="button" href="" target="_blank">code</a>         
-            </div>
-  
-          </div>
-  
-      </div>
-
+    <!-- ========== PROJECTS ========== -->
+    <span class="anchor" id="research"></span>
+    <div class="docs-section">
+      <h4>Research</h4>
       <div class="tab-content">
-         
-       <div class="tab-pane active" id="papers-selected">
-             
-         <span class="anchor" id="HHOT"></span>
-               
-           <div class="paper">
-            <p class="title"><b>Learning Class Unique Features in Fine-Grained Visual Classification</b></p>
-            <p><b>Runkai Zheng</b>, Zhijia Yu, Yinqi Zhang, Chris Ding, Hei Victor Cheng, Li Liu</p>
-            <p><i>Preprint. 2020</i></p>
-            <div class="paper-buttons">
-              <a class="button" href="https://arxiv.org/abs/2011.10951" target="_blank">arxiv</a>
-              <a class="button" href="" target="_blank">code</a>         
-            </div>
-   
-           </div>
-   
-       </div>
+        <div class="tab-pane active" id="projects-selected">
+          <div class="row">
 
-       <div class="tab-content">
-          
-        <div class="tab-pane active" id="papers-selected">
-              
-          <span class="anchor" id="HHOT"></span>
-                
+            <div class="six columns">
+              <div class="project-container">
+                <div class="project-image-container">
+                  <a href="projects/cuf.html">
+                    <img src="assets/projects/cuf/game-framework.png" class="u-max-full-width" />
+                  </a>
+                </div>
+                <div class="project-caption">
+                  <b>Categorial Informational Bottleneck</b> <br />
+                  A Game-theoretic solver-based regularization on vision classifier.
+                </div>
+              </div>
+            </div>
+
+            <div class="six columns">
+              <div class="project-container">
+                <div class="project-image-container">
+                  <a href="projects/backdoor.html">
+                    <img src="assets/projects/clp/channel-lips.png" class="u-max-full-width" />
+                  </a>
+                </div>
+                <div class="project-caption">
+                  <b>Defensive Techniques Against Backdoor Attacks</b> <br />
+                  Inspecting attacked neural networks from the perspective of activaiton statistics and weight matrices'
+                  properties.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ========== PUBLICATIONS ========== -->
+      <span class="anchor" id="publications"></span>
+
+      <div class="docs-section">
+        <h4>Publications</h4>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active" id="papers-selected">
+
+            <span class="anchor" id="HHOT"></span>
+
             <div class="paper">
-              <p class="title"><b>Sequential Convolution and Runge-Kutta Residual Architecture for Image Compressed Sensing</b></p>
-              <p><b>Runkai Zheng</b>, Yinqi Zhang, Daolang Huang, Qingliang Chen</p>
-              <p><i>European Conference on Computer Vision (ECCV). 2020.</i></p>
-             <div class="paper-buttons">
-               <a class="button" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540222.pdf" target="_blank">arxiv</a>
-               <a class="button" href="" target="_blank">code</a>         
-             </div>
-    
-            </div>
-    
-        </div>
-      
-      </div>
+              <p class="title"><b>Identify and Remove Backdoor Neurons through Clean-Poisoned Mixture Distribution</b>
+              </p>
+              <p><b>Runkai Zheng</b>, Rongjun Tang, Jianze Li, Li Liu</p>
+              <p><i>Neural Information Processing Systems (NeurIPS). 2022.</i></p>
+              <div class="paper-buttons">
+                <a class="button" href="" target="_blank">arxiv</a>
+                <a class="button" href="" target="_blank">code</a>
+              </div>
 
-   </div>
-
-<!-- ========== PROJECTS ========== -->
-<span class="anchor" id="hardwareprojects"></span>
-<div class="docs-section">
-  <h4>Hardware Projects</h4>
-  <p>
-    My friends (Ziyin Lu, Sihan Chen, Yuxuan Li and Mianhuang Hunag) and I runs <a href="">Elecholic</a>, a startup teams focuses on robotic hardware since 2016. We provide standardized motor controller system and efficient AGV (automated guided vehicle) solutions. Below are two selected projects:
-  </p>
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      <div class="row">
-
-        <div class="six columns">
-          <div class="project-container">
-            <div class="project-image-container">
-                <img src="assets/projects/v3/v3.png" class="u-max-full-width" />
             </div>
-            <div class="project-caption">
-                <b>MecaRun Series</b> <br/>
-                A project of professional robot chassis control system. 
-            </div>
+
           </div>
-        </div>
 
-        <div class="six columns">
-          <div class="project-container">
-            <div class="project-image-container">
-                <img src="assets/projects/vesc/vesc.png" class="u-max-full-width" />
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="papers-selected">
+
+              <span class="anchor" id="HHOT"></span>
+
+              <div class="paper">
+                <p class="title"><b>Data-free Backdoor Removal based on Channel Lipschitzness</b></p>
+                <p><b>Runkai Zheng</b>, Rongjun Tang, Jianze Li, Li Liu</p>
+                <p><i>European Conference on Computer Vision (ECCV). 2022.</i></p>
+                <div class="paper-buttons">
+                  <a class="button" href="https://arxiv.org/abs/2208.03111" target="_blank">arxiv</a>
+                  <a class="button" href="" target="_blank">code</a>
+                </div>
+
+              </div>
+
             </div>
-            <div class="project-caption">
-                <b>Enhanced VESC</b> <br/>
-                An enhanced version of the open-source project VESC. 
-            </div>
-          </div>
-        </div>
 
-    </div>
-  </div>
+            <div class="tab-content">
 
-</div>
+              <div class="tab-pane active" id="papers-selected">
 
-<!-- ========== MISC ========== -->
-<span class="anchor" id="misc"></span>
-<div class="docs-section">
-  <h4>Misc</h4>
-  <p>
-    Outside research, I'm an electric/acoustic guitar player, drummer and a beat boxer. I'm especially in favor of song of <a href="http://www.justinking.com/">Justin King</a> and <a href="https://www.polyphia.com/">Polyphia</a>. I was super honored to be advised by Justin King in 2017. Here are two of my covers of his songs:
-  </p>
+                <span class="anchor" id="HHOT"></span>
 
-  <p> Phunkdified - Justin King  (cover, 2017.12.07)</p>
-    
-  <audio preload="auto" controls style="width: 100%; height: 40px;">
-    <source src="assets/audios/Phunkdified.mp3">
-    $(function() {
-      $('audio').audioPlayer();
-    });
-  </audio>
+                <div class="paper">
+                  <p class="title"><b>Bayesian Optimization Augmented with Actively Elicited Expert Knowledge</b></p>
+                  <p>Daolang Huang, Louis Filstroff, Petrus Mikkola, <b>Runkai Zheng</b>, Samuel Kaski</p>
+                  <p><i>Preprint. 2022</i></p>
+                  <div class="paper-buttons">
+                    <a class="button" href="https://arxiv.org/abs/2208.08742" target="_blank">arxiv</a>
+                    <a class="button" href="" target="_blank">code</a>
+                  </div>
 
-  <p> </p>
-  <p> Knock on wood - Justin King  (cover, 2017.12.12)</p>
-    
-  <audio preload="auto" controls style="width: 100%; height: 40px;">
-    <source src="assets/audios/Knock on wood.mp3">
-    $(function() {
-      $('audio').audioPlayer();
-    });
-  </audio>
+                </div>
 
-</div>
+              </div>
 
-<!-- ========== RESUME ========== -->
-<span class="anchor" id="resume"></span>
-<div class="docs-section">
-  <h4>Vit&#230;</h4>
+              <div class="tab-content">
 
-  <!-- <p>Full CV in <a href=/assets/cv/cv.pdf target="_blank">PDF</a> (or a shorter <a href=/assets/cv/resume.pdf target="_blank">Resumé</a>).</p> -->
+                <div class="tab-pane active" id="papers-selected">
 
-  <!-- The Timeline -->
-  <ul class="timeline">
-    
-    <li>
-      <div class="direction-l">
-        <div class="flag-wrapper">
-          <span class="flag">Microsoft Research Asia</span>
-          <span class="time-wrapper"><span class="time">2022 - now</span></span>
-        </div>
-        <div class="desc"><b>Research Intern</b>
-          <br/> Social Computing Group <br/>
-          Mentor: Jindong Wang
-        </div>
-      </div>
-    </li>
-    
-    <li>
-      <div class="direction-r">
-        <div class="flag-wrapper">
-          <span class="flag">The Chinese University of Hong Kong, Shenzhen</span>
-          <span class="time-wrapper"><span class="time">2021 - now</span></span>
-        </div>
-        <div class="desc">
-          <b>Master of Data Science</b>
-          <br/> Thesis Advisor: Chris H.Q. Ding <br/>
-        </div>
-      </div>
-    </li>
+                  <span class="anchor" id="HHOT"></span>
 
-    <li>
-      <div class="direction-l">
-        <div class="flag-wrapper">
-          <span class="flag">Shenzhen Research Institute of Big Data</span>
-          <span class="time-wrapper"><span class="time">2020 - 2021</span></span>
-        </div>
-        <div class="desc"><b>Research Engineer</b>
-          <br/> Medical Big Data Laboratory <br/>
-        </div>
-      </div>
-    </li>
+                  <div class="paper">
+                    <p class="title"><b>Learning Class Unique Features in Fine-Grained Visual Classification</b></p>
+                    <p><b>Runkai Zheng</b>, Zhijia Yu, Yinqi Zhang, Chris Ding, Hei Victor Cheng, Li Liu</p>
+                    <p><i>Preprint. 2020</i></p>
+                    <div class="paper-buttons">
+                      <a class="button" href="https://arxiv.org/abs/2011.10951" target="_blank">arxiv</a>
+                      <a class="button" href="" target="_blank">code</a>
+                    </div>
 
-    <li>
-      <div class="direction-l">
-        <div class="flag-wrapper">
-          <span class="flag">Elecholic</span>
-          <span class="time-wrapper"><span class="time">2016 - 2020</span></span>
-        </div>
-        <div class="desc"><b>Embedded & Software Engineer</b>
-        </div>
-      </div>
-    </li>
-    
+                  </div>
 
-    <li>
-      <div class="direction-r">
-        <div class="flag-wrapper">
-          <span class="flag">Jinan University</span>
-          <span class="time-wrapper"><span class="time">2016 - 2020</span></span>
-        </div>
-        <div class="desc">
-          <b>B.Eng in Computer Science and Technology</b>
-          <br/>Thesis Advisor: Qingliang Chen<br/>
-        </div>
-      </div>
-    </li>
-    
-  </ul>
-</div>
+                </div>
 
-</div>
+                <div class="tab-content">
 
-<!-- ========== ACKNOWLEDGEMENT ========== -->
-<span class="anchor" id="ack"></span>
-<div class="docs-section">
-  <h4>Acknowledgement</h4>
-  <p> This website was built based on a template made by <a href="http://web.media.mit.edu/~msaveski/">Martin Saveski</a>.
-  </p>
-  <p>
-</div>
+                  <div class="tab-pane active" id="papers-selected">
 
-<div class="footer">
-  <div class="row">
-    <div class="four columns">
-      Runkai Zheng
-    </div>
-    <div class="four columns">
-      rkteddy [AT] outlook.com
-    </div>
-    <div class="four columns">
-      <span onclick="window.open('https://github.com/rkteddy')" style="cursor: pointer">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </span>
+                    <span class="anchor" id="HHOT"></span>
 
-      <span onclick="window.open('https://scholar.google.com/citations?user=52haRQ0AAAAJ&hl=en')" style="cursor: pointer">
-        <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-      </span>
+                    <div class="paper">
+                      <p class="title"><b>Sequential Convolution and Runge-Kutta Residual Architecture for Image
+                          Compressed Sensing</b></p>
+                      <p><b>Runkai Zheng</b>, Yinqi Zhang, Daolang Huang, Qingliang Chen</p>
+                      <p><i>European Conference on Computer Vision (ECCV). 2020.</i></p>
+                      <div class="paper-buttons">
+                        <a class="button" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540222.pdf"
+                          target="_blank">arxiv</a>
+                        <a class="button" href="" target="_blank">code</a>
+                      </div>
 
-      <span onclick="window.open('https://orcid.org/0000−0003−3120−5466')" style="cursor: pointer">
-        <i class="ai ai-orcid ai-lg" aria-hidden="true"></i>
-      </span>
-    </div>
-  </div>
-</div>
+                    </div>
 
-<!-- End Document
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- ========== PROJECTS ========== -->
+              <span class="anchor" id="hardwareprojects"></span>
+              <div class="docs-section">
+                <h4>Hardware Projects</h4>
+                <p>
+                  My friends (Ziyin Lu, Sihan Chen, Yuxuan Li and Mianhuang Hunag) and I runs <a href="">Elecholic</a>,
+                  a startup teams focuses on robotic hardware since 2016. We provide standardized motor controller
+                  system and efficient AGV (automated guided vehicle) solutions. Below are two selected projects:
+                </p>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="projects-selected">
+                    <div class="row">
+
+                      <div class="six columns">
+                        <div class="project-container">
+                          <div class="project-image-container">
+                            <a href="projects/v3.html">
+                              <img src="assets/projects/v3/v3.png" class="u-max-full-width" />
+                            </a>
+                          </div>
+                          <div class="project-caption">
+                            <b>MecaRun Series</b> <br />
+                            A project of professional robot chassis control system.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="six columns">
+                        <div class="project-container">
+                          <div class="project-image-container">
+                            <img src="assets/projects/vesc/vesc.png" class="u-max-full-width" />
+                          </div>
+                          <div class="project-caption">
+                            <b>Enhanced VESC</b> <br />
+                            An enhanced version of the open-source project VESC.
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- ========== MISC ========== -->
+                <span class="anchor" id="misc"></span>
+                <div class="docs-section">
+                  <h4>Misc</h4>
+                  <p>
+                    Outside research, I'm an electric/acoustic guitar player, drummer and a beat boxer. I'm especially
+                    in favor of song of <a href="http://www.justinking.com/">Justin King</a> and <a
+                      href="https://www.polyphia.com/">Polyphia</a>. I was super honored to be advised by Justin King in
+                    2017. Here are two of my covers of his songs:
+                  </p>
+
+                  <p> Phunkdified - Justin King (cover, 2017.12.07)</p>
+
+                  <audio preload="auto" controls style="width: 100%; height: 40px;">
+                    <source src="assets/audios/Phunkdified.mp3">
+                    $(function() {
+                    $('audio').audioPlayer();
+                    });
+                  </audio>
+
+                  <p> </p>
+                  <p> Knock on wood - Justin King (cover, 2017.12.12)</p>
+
+                  <audio preload="auto" controls style="width: 100%; height: 40px;">
+                    <source src="assets/audios/Knock on wood.mp3">
+                    $(function() {
+                    $('audio').audioPlayer();
+                    });
+                  </audio>
+
+                </div>
+
+                <!-- ========== RESUME ========== -->
+                <span class="anchor" id="resume"></span>
+                <div class="docs-section">
+                  <h4>Vit&#230;</h4>
+
+                  <!-- <p>Full CV in <a href=/assets/cv/cv.pdf target="_blank">PDF</a> (or a shorter <a href=/assets/cv/resume.pdf target="_blank">Resumé</a>).</p> -->
+
+                  <!-- The Timeline -->
+                  <ul class="timeline">
+
+                    <li>
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="flag">Microsoft Research Asia</span>
+                          <span class="time-wrapper"><span class="time">2022 - now</span></span>
+                        </div>
+                        <div class="desc"><b>Research Intern</b>
+                          <br /> Social Computing Group <br />
+                          Mentor: Jindong Wang
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="direction-r">
+                        <div class="flag-wrapper">
+                          <span class="flag">The Chinese University of Hong Kong, Shenzhen</span>
+                          <span class="time-wrapper"><span class="time">2021 - now</span></span>
+                        </div>
+                        <div class="desc">
+                          <b>Master of Data Science</b>
+                          <br /> Thesis Advisor: Chris H.Q. Ding <br />
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="flag">Shenzhen Research Institute of Big Data</span>
+                          <span class="time-wrapper"><span class="time">2020 - 2021</span></span>
+                        </div>
+                        <div class="desc"><b>Research Engineer</b>
+                          <br /> Medical Big Data Laboratory <br />
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="flag">Elecholic</span>
+                          <span class="time-wrapper"><span class="time">2016 - 2020</span></span>
+                        </div>
+                        <div class="desc"><b>Embedded & Software Engineer</b>
+                        </div>
+                      </div>
+                    </li>
+
+
+                    <li>
+                      <div class="direction-r">
+                        <div class="flag-wrapper">
+                          <span class="flag">Jinan University</span>
+                          <span class="time-wrapper"><span class="time">2016 - 2020</span></span>
+                        </div>
+                        <div class="desc">
+                          <b>B.Eng in Computer Science and Technology</b>
+                          <br />Thesis Advisor: Qingliang Chen<br />
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- ========== ACKNOWLEDGEMENT ========== -->
+              <span class="anchor" id="ack"></span>
+              <div class="docs-section">
+                <h4>Acknowledgement</h4>
+                <p> This website was built based on a template made by <a
+                    href="http://web.media.mit.edu/~msaveski/">Martin Saveski</a>.
+                </p>
+                <p>
+              </div>
+
+              <div class="footer">
+                <div class="row">
+                  <div class="four columns">
+                    Runkai Zheng
+                  </div>
+                  <div class="four columns">
+                    rkteddy [AT] outlook.com
+                  </div>
+                  <div class="four columns">
+                    <span onclick="window.open('https://github.com/rkteddy')" style="cursor: pointer">
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                    </span>
+
+                    <span onclick="window.open('https://scholar.google.com/citations?user=52haRQ0AAAAJ&hl=en')"
+                      style="cursor: pointer">
+                      <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+                    </span>
+
+                    <span onclick="window.open('https://orcid.org/0000−0003−3120−5466')" style="cursor: pointer">
+                      <i class="ai ai-orcid ai-lg" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
