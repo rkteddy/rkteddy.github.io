@@ -145,13 +145,13 @@
 
       <div class="title-subtitle">
         <h3>MecaRun Series</h3>
-        <h5>MecaRun is a project of professional robot chassis control system. Through the standardization of software and hardware, it can quickly prototype a robot chassis mobile system and shorten the robot development cycle.</h5>
+        <h5>MecaRun is a professional robot chassis controller system project. By standardization of software and hardware, it enables quick prototyping of a robot chassis mobile system and shorten the robot development cycle.</h5>
       </div>
 
 
       <h5 id="motivation"><b>Motivation</b></h5>
 
-      <p>In order to solve the problems of poor adaptability of robot chassis in different scenarios, the cost of directly customized chassis and poor matching between ready-made controller and chassis, our team proposed the solution: standardized controller + standard components.</p>
+      <p>To address the issues of poor adaptability of robot chassis in different scenarios, high costs for customized chassis, and poor matching between ready-made controllers and chassis, our team has proposed the solution of using standardized controllers and standard components. This allows for better adaptability, lower costs, and better compatibility between different parts of the robot.</p>
 
       <figure class="image">
         <img src="../assets/projects/v3/car.png" style="width: 75%" />
@@ -161,32 +161,32 @@
       <p>This scheme reduces repeated development work, and can quickly realize prototype and large-scale use, while ensuring a high degree of freedom. Appropriate motors and reducers, chassis structure types and chassis dimensions can be selected according to the users' own application scenarios. Finally the design can be quickly customized, or the existing equipment can be transformed into a robot chassis mobile system that meets the needs.</p>
 
       <h5 id="what"><b>What we have done</b></h5>
-      <p>Standardization refers to the formulation of uniform technical standards in terms of specifications and components, etc. The controller standardization in this project includes hardware standardization and software standardization. The significance of standardization lies in the difference between shielded motor parameters and chassis design, which provides users with a unified upper layer interface and helps users quickly achieve vehicle construction, commissioning and mass production.</p>
+      <p>Standardization refers to the establishment of uniform technical standards in terms of specifications, components, and other factors. The standardization of controllers in this project encompasses both hardware and software. The importance of standardization lies in its ability to abstract away differences in motor parameters and chassis design, providing users with a unified interface and helping them quickly achieve vehicle construction, commissioning, and mass production.</p>
 
       <p>Specifically, out controller standardization includes:</p>
  
       <p><b>Hardware standardization</b></p>
   
-      <p>1. Communication interface:</p>
+      <p style="padding-left: 2em"> 1. Communication interface:</p>
   
-      <p>Support the control through serial port, CAN port and Ethernet port.</p>
+      <p style="padding-left: 2em"> Support the control through serial port, CAN port and Ethernet port.</p>
 
-      <p>2. Motor interface:</p>
+      <p style="padding-left: 2em">2. Motor interface:</p>
 
-      <p>The brush version supports the direct control of small and medium power encoder brush motors. The external driver version supports the control of other types of motors through directional pulses, CAN, RS485, PWM/Voltage, covering 90% of mobile robot chassis motors in the market. They are incorporated into standard chassis operation commands.</p>
+      <p style="padding-left: 2em">The brush version of the system supports the direct control of small and medium power encoder brush motors. The external driver version supports the control of other types of motors through directional pulses, CAN, RS485, PWM/Voltage, covering a wide range of motors commonly used in mobile robot chassis. These motors are integrated into standard chassis operation commands.</p>
   
       <p><b>Software standardization</b></p>
   
-      <p>1. Chassis parameter:</p>
+      <p style="padding-left: 2em">1. Chassis parameter:</p>
   
-      <p>The parameters such as wheel diameter, reduction ratio, acceleration, direction, track width, forward and inverse kinematics model are standardized by software to realize rapid adaptation of different chassis.</p>
+      <p style="padding-left: 2em">The parameters such as wheel diameter, reduction ratio, acceleration, direction, track width, forward and inverse kinematics model are standardized by software to realize rapid adaptation of different chassis.</p>
   
-      <p>2. Communication protocol:</p>
+      <p style="padding-left: 2em">2. Communication protocol:</p>
 
-      <p>The standard communication protocol of the controller is used to shield the differences of the chassis, and the secondary development programming API can be provided. The encapsulated standardized software interface can adapt to different controlling platforms.</p>
+      <p style="padding-left: 2em">The standard communication protocol of the controller is used to shield the differences of the chassis, and the secondary development programming API can be provided. The encapsulated standardized software interface can adapt to different controlling platforms.</p>
 
       <h5 id="framework"><b>Framework</b></h5>
-      The overall framework can be divided into four parts. The first part is the input source, which is used for controlling the movement of robot chassis. We use an optional type of input protocol as the control signal. The second part is the acquisition of the attitude information. These information can be obtained by the odometer and an optional IMU module. After gathering the attitude information, we then solve the forward and inverse kinematics to obtain the acceleration. Finally, the motor movement is controlled through a triple closed-loop control system.
+      The overall framework of the system can be divided into four parts. The first part is the input source, which is used to control the movement of the robot chassis. We use an optional type of input protocol as the control signal. The second part is the acquisition of attitude information, which can be obtained using an odometer and an optional IMU module. After gathering the attitude information, we solve the forward and inverse kinematics to obtain the acceleration. Finally, the motor movement is controlled using a triple closed-loop control system.
       <figure class="image">
         <img src="../assets/projects/v3/framework.png" style="width: 100%" />
         <figcaption><b>Figure 2. Overall framework of MecaRun V3.</b></figcaption>
@@ -199,12 +199,12 @@
 
       <h5 id="ports"><b>Ports</b></h5>
 
-      <p>We provided rich types of input source for controlling, i.e., PS2, UART, USB, and SBUS protocol. As for the output, MecaRun V3 provides ports of 4-Way Brush Motor and 1-Way RC Servo. In addition, MecaRun V3 also supports extention of IMU module as an option.</p>
+      <p>We offer a variety of input sources for control, including PS2, UART, USB, and SBUS protocols. For the output, MecaRun V3 provides ports for 4-way brush motors and 1-way RC servos. Additionally, MecaRun V3 also supports the extension of an IMU module as an option.</p>
       <figure class="image">
         <img src="../assets/projects/v3/illustration.png" style="width: 80%" />
         <figcaption><b>Figure 4. Illustration of the provided ports.</b></figcaption>
       </figure>
-      <p>Finally, we provide host software for parameter setting and debugging, which greatly reduce the cost of time.
+      <p>Finally, we provide host software for parameter setting and debugging, which greatly reduces the time and cost of development.
       </p>
       <figure class="image">
         <img src="../assets/projects/v3/software_0.png" style="width: 80%" />
