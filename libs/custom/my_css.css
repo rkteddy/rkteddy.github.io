@@ -228,6 +228,10 @@ pre {
   visibility: hidden;
 }
 
+.fixed-size-image {
+  width: 375px;  /* Set your desired width */
+  height: 187px; /* Set your desired height */
+}
 
 .clear {
   clear:both;
